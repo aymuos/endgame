@@ -23,3 +23,57 @@ The simulator must:
 - Save the final simulator implementation directly to a new file named `src/simulator/causal_bandit_env.py`.
 
 
+
+Simulator features that remains :
+
+A. Static (never change) : 
+[ batch_size , pickup_destination_distance , typecode, weather , Spatial congestion index , GPS statistics , POI category ]
+B. Dynamic (recomputed every decision) [ current_position → candidate distance , remaining_orders , cumulative_distance
+elapsed_route_time , current_hour , batch_progress ]
+
+
+Simulator state : 
+
+State
+
+current_x
+current_y
+
+last_duration
+
+elapsed_route_time
+
+current_hour
+
+remaining_orders
+
+batch_progress
+
+cumulative_distance
+
+--- 
+candidate specific dynamic features: 
+dist_from_current , remaining_haul_distance (recomputed) , distance_to_remaining_centroid (optional)
+---
+Static Dataset features : 
+batch_size , pickup_destination_distance , GPS features ,Weather , Congestion , POI , Courier history
+
+
+
+Utilising batch features : 
+
+Static batch descriptors
+
+Created once.
+
+batch_size , same_aoi_share , isolated_delivery , distance_to_batch_centroid
+
+--- 
+
+Dynamic batch descriptors
+
+Created by simulator.
+
+remaining_orders , remaining_centroid , batch_progress , remaining_compactness , remaining_AOI_diversity
+
+
