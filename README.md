@@ -46,7 +46,9 @@
 
 - [20s sampled GPS logs](https://huggingface.co/datasets/Cainiao-AI/LaDe/blob/main/data_with_trajectory_20s/courier_detailed_trajectory_20s.pkl.xz) : Detailed log of GPS pings over 1 month period [439 MB compressed ]
 
-- **Number of samples/classes/tokens** : The dataset involves 10,677k packages of 21k couriers and about 9 million GPS pings 
+- **Number of samples/classes/tokens** : The dataset involves 10,677k packages of 21k couriers and about 9 million GPS pings.Number of unique delivery person in Shanghai: 142 , 
+Number of unique delivery person in Chongqing: 145 , 
+Number of unique delivery person in Hangzhou: 178 
 
 - **Preprocessing and train-test split** : Used Polars to manage large chunks of preprocessing pipelines taking advantage of its lazy-loading and zero copy features . Data is grouped into batches such that while splitting no batch spill happens . Data is splitted into 70:10:20 unless otherwise noted
 
