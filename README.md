@@ -1,13 +1,13 @@
-## Code Repo for Thesis CH24M571
+## Code Repo for Masters Thesis - CH24M571
 
-1. **Project Overview** 
+# 1. **Project Overview** 
 
 - **Problem Statement** : A Causal-Informed Framework for ETA-Aware Delivery Sequencing in Last-Mile Logistics
 - **Objectives & Application Domain** : The objective is to design a city agnostic framework for delivery sequencing with optimising ETA as the primary goal. The domain for the thesis is Last Mile logistics.
 
 ---
 
-2. **Programming Language & Framework** 
+# 2. **Programming Language & Framework** 
 
 - **Languages used** : Python
 - **Library & Frameworks** : 
@@ -26,7 +26,7 @@
     | matplotlib & seaborn | 3.11.0 / 0.13.2 | Visualization and plotting |
     | shap & joypy & xgboost | Latest | Graph plotting |
 ---
-3. **Compute Resources**
+# 3. **Compute Resources**
 
 - **CPU/GPU configuration** : The code is highly CPU bound process , GPU is not required . The code has been designed to run on Google Colab  & in local on a Octacore AMD Ryzen 7 AI 350 processor
 
@@ -36,7 +36,7 @@
 
 ---
 
-4. **Dataset Details**
+# 4. **Dataset Details**
 
 - **Dataset source and size** :  [LaDe Dataset Huggingface ](https://huggingface.co/datasets/Cainiao-AI/LaDe)
 
@@ -54,13 +54,13 @@ Number of unique delivery person in Hangzhou: 178
 
 ---
 
-5. **Tools and Execution Environment**
+# 5. **Tools and Execution Environment**
 
 - **Processing engines/tools used** : Polars
 
 ---
 
-6. **Code Organization**
+# 6. **Code Organization**
 
 - **Modular or single-file implementation** : Modular
 
@@ -79,7 +79,7 @@ Number of unique delivery person in Hangzhou: 178
 
 ---
 
-7. **Pipeline Design**
+# 7. **Pipeline Design**
 
 - **Automatic or semi-automatic workflow** : Semi-automatic - Running all notebooks automatically would cause machines to run out of memory , hence the notebooks must be run sequentially
 
